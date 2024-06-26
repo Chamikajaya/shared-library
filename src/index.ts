@@ -94,3 +94,5 @@ export {
 } from './error-handler';
 
 export { verifyGatewayRequest } from './apigw-middleware';
+
+export { winstonLogger } from './logger';

@@ -1,4 +1,4 @@
-// * To make sure that the requests to our private network, indeed comes via the API-GATEWAY
+// * To make sure that the requests coming to our private network, indeed comes via the API-GATEWAY
 
 import JWT from 'jsonwebtoken';
 import { Request, Response, NextFunction } from 'express';
@@ -38,12 +38,13 @@ export function verifyGatewayRequest(
 
   try {
     // Verify the JWT token - Token will contain the ID of the service that is making the request
+    // TODO: Add the jwt secret key to verify method as 2nd argument
     const payload: { id: string; iat: number } = JWT.verify(token, '') as {
       id: string;
       iat: number;
     };
 
-    // Check if the token's ID is in our list of valid tokens defined above 👆👆👆
+    // Check if the token's ID is in our list of valid tokens defined in the list above 👆👆👆
     if (!tokens.includes(payload.id)) {
       throw new NotAuthorizedError(
         'Invalid request',
