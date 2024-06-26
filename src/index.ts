@@ -78,3 +78,5 @@ export {
 } from './interfaces/seller.interface';
 
 export { IEmailLocals } from './interfaces/email.interface';
+
+export { uploads, videoUpload } from './media-uploader';
