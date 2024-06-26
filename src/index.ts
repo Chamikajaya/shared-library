@@ -80,3 +80,17 @@ export {
 export { IEmailLocals } from './interfaces/email.interface';
 
 export { uploads, videoUpload } from './media-uploader';
+
+export {
+  IErrorResponse,
+  IError,
+  CustomError,
+  BadRequestError,
+  NotFoundError,
+  NotAuthorizedError,
+  FileTooLargeError,
+  ServerError,
+  ErrnoException,
+} from './error-handler';
+
+export { verifyGatewayRequest } from './apigw-middleware';
