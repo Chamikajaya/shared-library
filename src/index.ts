@@ -93,6 +93,6 @@ export {
   ErrnoException,
 } from './error-handler';
 
-export { verifyGatewayRequest } from './apigw-middleware';
+// export { verifyGatewayRequest } from './apigw-middleware';
 
 export { winstonLogger } from './logger';
