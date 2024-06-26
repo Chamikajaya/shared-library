@@ -39,6 +39,7 @@
   },
   "types": "./src/index.d.ts",
   "dependencies": {
+    "@babel/preset-env": "^7.24.7",
     "@elastic/elasticsearch": "^8.14.0",
     "cloudinary": "^2.2.0",
     "express": "^4.19.2",
