@@ -18,11 +18,11 @@
     "trailingComma": "es5"
   },
   "keywords": [],
-  "name": "@chamikajaya/shared-library",
+  "name": "@Chamikajaya/shared-library",
   "author": "Chamika Jayasinghe",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/Chamikajaya/shared-library.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
@@ -39,7 +39,9 @@
   },
   "types": "./src/index.d.ts",
   "dependencies": {
+    "@elastic/elasticsearch": "^8.14.0",
     "express": "^4.19.2",
+    "mongoose": "^8.4.4",
     "typescript": "^5.5.2"
   },
   "devDependencies": {
