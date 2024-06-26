@@ -4,7 +4,7 @@
   "main": "index.js",
   "description": "Shared library for semester 5 project",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "scripts": {
     "build": "npm run build:cjs && npm run build:esm && tsc --outDir build/src && node scripts/build-package.js",
